@@ -1,0 +1,12 @@
+//returns the input string as a unique variable name
+global proc string zenUniqueVarName(string $name)
+{
+	string	$all[]=`env`;
+	string	$allElse[]=`stringArrayRemove {$name} $all`;
+		if(size($all)>size($allElse))
+		{
+			$name=`zenNumberSuffix $name`;
+			$name=`zenUniqueName $name`;
+		}
+	return 	$name;
+}

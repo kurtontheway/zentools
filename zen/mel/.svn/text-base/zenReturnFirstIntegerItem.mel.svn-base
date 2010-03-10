@@ -1,0 +1,5 @@
+//return the first item in an integer array
+global proc int zenReturnFirstIntegerItem(int $array[])
+{
+	return $array[0];
+}

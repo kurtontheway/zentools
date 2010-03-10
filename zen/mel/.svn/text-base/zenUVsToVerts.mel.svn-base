@@ -1,0 +1,13 @@
+global proc string[] zenUVsToVerts(string $uvPoints[])
+{
+	string	$verts[];
+	string	$vert[];
+		for($i=0;$i<size($uvPoints);$i++)
+		{
+			$vert=`polyListComponentConversion -tv ($uvPoints[$i])`;
+			$vert=`ls -fl $vert`;
+			//print $uvPoints[$i];
+			$verts[$i]=$vert[0];
+		}
+	return 	$verts;
+}

@@ -1,0 +1,30 @@
+//find the end edges of an edge loop
+
+global proc string[] zenFindEdgeLoopEnds(string $edgeLoop[])
+{			
+	string	$intersector=`stringArrayIntersector`;
+		
+		$edgeLoop=`ls -fl $edgeLoop`;
+		
+	string	$ends[];
+	string	$testEdges[];
+	
+		for($i=0;$i<size($edgeLoop);$i++)
+		{
+			$testEdges=`polyListComponentConversion -tv $edgeLoop[$i]`;
+			$testEdges=`polyListComponentConversion -te $testEdges`;
+			$testEdges=`ls -fl $testEdges`;
+			
+			stringArrayIntersector -e -r $intersector;
+			stringArrayIntersector -e -i $testEdges $intersector;
+			stringArrayIntersector -e -i $edgeLoop $intersector;
+			
+			$testEdges=`stringArrayIntersector -q $intersector`;
+			
+			if(size($testEdges)==2) $ends[size($ends)]=$edgeLoop[$i];
+		}
+		
+		deleteUI $intersector;
+		
+	return $ends;
+}

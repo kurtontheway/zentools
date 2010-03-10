@@ -1,0 +1,21 @@
+global proc string zenGetLine(string $searchString, string $filePath)
+{
+	int	$id=`fopen $filePath "r"`;
+	float	$startTime=`timerX`;
+	string	$line="\n";
+	
+		for($i=0;size($line)>0;$i++)
+		{
+			$line=`fgetline $id`;
+			
+			if(`gmatch $line ("*"+$searchString+"*")`)
+			{
+				fclose $id;
+				return $line;
+			}
+		}
+		
+		fclose $id;
+		
+	return	"";
+}

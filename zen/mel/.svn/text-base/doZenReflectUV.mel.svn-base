@@ -1,0 +1,31 @@
+global proc doZenReflectUV()
+{
+	global 	int	$zenOptions_reflectUVReferenceAxis;
+	global 	float	$zenOptions_reflectUVuAxisOffset;
+			
+	int	$err;
+
+		if(`pluginInfo -q -l closestPointOnMesh`==0 && `getApplicationVersionAsFloat`<8)
+		{
+			$err=catch(`loadPlugin -qt closestPointOnMesh`);
+		}
+
+		if(`pluginInfo -q -l pointOnMeshInfo`==0)
+		{
+			$err=catch(`loadPlugin -qt pointOnMeshInfo`);
+		}
+		
+	int	$err;
+	string	$unit=`currentUnit -q -l`;
+		currentUnit -l cm;
+				
+		$err=catch(`zenReflectUV $zenOptions_reflectUVuAxisOffset $zenOptions_reflectUVReferenceAxis`);
+		
+		if($err)
+		{
+			progressWindow -ep;
+			undoInfo -swf 1;
+		}
+		
+		currentUnit -l $unit;
+}

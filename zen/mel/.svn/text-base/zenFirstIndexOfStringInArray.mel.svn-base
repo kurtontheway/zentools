@@ -1,0 +1,5 @@
+global proc int zenFirstIndexOfStringInArray(string $str, string $array[])
+{
+		for($i=0;$i<size($array);$i++) if($str==$array[$i]) return $i;	
+	return	-1;
+}

@@ -1,0 +1,4 @@
+global proc float[] zenVectorToArray(vector $v)
+{
+	return	{($v.x),($v.y),($v.z)};
+}

@@ -1,0 +1,26 @@
+global proc doZenPatchUV()
+{	
+	//options
+	global	int	$zenOptions_patchUVDistribution;
+	
+	string	$command=
+		(
+			"zenPatchUV "+
+			(string($zenOptions_patchUVDistribution))
+			+";"
+		);
+		
+	int	$err;
+	string	$unit=`currentUnit -q -l`;
+		currentUnit -l cm;
+				
+		$err=catch(`evalEcho($command)`);
+		
+		if($err)
+		{
+			progressWindow -ep;
+			undoInfo -swf 1;
+		}
+		
+		currentUnit -l $unit;
+}

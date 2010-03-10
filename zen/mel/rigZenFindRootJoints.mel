@@ -1,0 +1,33 @@
+global proc string[] rigZenFindRootJoints(string $influences[])
+{
+	string	$topLevelTrs[]=zenReturnTopLevelTransforms($influences);
+	
+	int	$found=false;
+	string	$nextRelatives[];
+	
+	string	$rootJoints[];
+
+		for($t in $topLevelTrs)
+		{
+			$found=false;
+			$nextRelatives={};
+			$nextRelatives[0]=$t;
+
+			while($found==false)
+			{
+				for($n in $nextRelatives)
+				{                                   
+					if(`nodeType $n`=="joint")
+					{
+						$rootJoints[size($rootJoints)]=$n;
+						$found=true;
+					}
+				}
+				
+				if(!$found)
+					$nextRelatives=`listRelatives -f -c -type transform $nextRelatives`;
+			}
+		}
+		
+	return	$rootJoints;
+}

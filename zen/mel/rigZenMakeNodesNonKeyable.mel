@@ -1,0 +1,17 @@
+global proc rigZenMakeNodesNonKeyable(string $nodes[])
+{
+	string	$keyables[];
+	string	$channelBox[];
+		for($node in $nodes)
+		{
+			if(objExists($node))
+			{
+				$keyables=`listAttr -m -keyable $node`;
+				
+				for($a in $keyables)
+				{
+					setAttr -keyable false -cb true ($node+"."+$a);
+				}
+			}
+		}
+}

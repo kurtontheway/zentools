@@ -1,0 +1,13 @@
+//returns the sum of the lengths of given edges
+global proc float zenAggregateLength(string $edges[])
+{
+		$edges=`ls -fl $edges`;
+	float 	$returnVal;
+
+		for($i=0;$i<size($edges);$i++)
+		{
+			$returnVal=$returnVal+`arclen $edges[$i]`;
+		}
+		
+		return $returnVal;
+}

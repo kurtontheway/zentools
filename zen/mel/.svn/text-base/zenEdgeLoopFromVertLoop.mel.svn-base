@@ -1,0 +1,11 @@
+//return an ordered edge loop from a vertex loop		
+global proc string[] zenEdgeLoopFromVertLoop(string $verts[])
+{
+	string	$edges[];
+	string	$e[];
+		for($i=0;$i<size($verts)-1;$i++){
+			$e=`polyListComponentConversion -te -in ($verts[$i]) ($verts[$i+1])`;
+			$edges[$i]=$e[0];
+		}
+	return	$edges;
+}

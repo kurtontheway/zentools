@@ -1,0 +1,14 @@
+//return the average length of given edges
+global proc float zenAverageEdgeLength(string $edges[])
+{
+	float 	$length;
+	float	$edgeLength;
+	
+		for($edge in $edges)
+		{
+			$edgeLength=(arclen($edge));
+			$length=$length+$edgeLength;
+		}
+		
+	return	($length/(size($edges)));
+}

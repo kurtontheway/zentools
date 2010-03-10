@@ -1,0 +1,15 @@
+//return an array which is comprised of the portion
+//beginning at $start and ending at $end
+global proc string[] zenStringArraySector(string $array[], int $start,int $end)
+{
+	int 	$n=0;
+	string 	$newArray[];
+
+		for($i=$start;$i<=$end;$i++)
+		{
+			$newArray[$n]=$array[$i];
+			$n++;
+		}
+
+	return 	$newArray;
+}

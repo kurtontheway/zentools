@@ -1,0 +1,10 @@
+//returns a float array of size $count filled with value $value
+global proc float[] zenFillFloatArray(int $count,float $value)
+{
+	float 	$array[];
+		for($i=0;$i<$count;$i++)
+		{ 
+			$array[size($array)]=$value;
+		}
+		return $array;
+}

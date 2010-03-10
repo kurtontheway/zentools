@@ -1,0 +1,21 @@
+//finds end vertices
+global proc string zenFindEndVert(string $verts[])
+{
+	string	$returnVal;
+	
+		$verts=`ls -fl $verts`;
+		
+		if(size($verts)<3) return $verts[0];
+	
+	//find the first end vertex
+	string 	$vert=$verts[0];
+	
+		$otherVerts=`stringArrayRemove {$vert} $verts`;
+		$otherVerts=`zenSortVertsByDistance $vert $otherVerts`;
+		$otherVerts=`stringArrayRemove {""," ",","} $otherVerts`;
+		
+		$returnVal=$otherVerts[size($otherVerts)-1];
+		
+	return	$returnVal;
+		
+}

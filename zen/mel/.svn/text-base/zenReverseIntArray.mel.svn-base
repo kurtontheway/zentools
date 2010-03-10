@@ -1,0 +1,10 @@
+//reverse a string array
+global proc int[] zenReverseIntArray(int $array[])
+{
+	int	$arrayOut[];
+		for($i=0;$i<size($array);$i++)
+		{
+			$arrayOut[$i]=$array[(size($array)-1-$i)];
+		}
+	return 	$arrayOut;
+}

@@ -1,0 +1,9 @@
+//return the first item in a string array
+global proc string zenReturnFirstStringItem(string $array[])
+{
+	if(size($array)>0)
+		return $array[0];
+	else
+		return	"";
+
+}

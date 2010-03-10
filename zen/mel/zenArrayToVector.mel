@@ -1,0 +1,4 @@
+global proc vector zenArrayToVector(float $array[])
+{
+	return <<($array[0]),($array[1]),($array[2])>>;
+}

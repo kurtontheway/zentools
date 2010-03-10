@@ -1,0 +1,20 @@
+//works identically to stringArrayCatenate, but with float arrays
+global proc float[] zenFloatArrayCatenate(float $A[],float $B[])
+{
+		for($i=0;$i<size($B);$i++)
+		{
+			$A[(size($A))]=$B[$i];
+		}
+	return	$A;
+}
+
+
+
+
+
+
+
+
+
+
+	

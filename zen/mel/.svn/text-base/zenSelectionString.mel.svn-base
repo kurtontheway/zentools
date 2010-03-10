@@ -1,0 +1,12 @@
+global proc string zenSelectionString()
+{
+	string	$sel[]=`ls -sl -fl`;
+		$returnVal="{";
+		for($i=0;$i<size($sel);$i++)
+		{
+			$returnVal=$returnVal+"\""+($sel[$i])+"\"";
+			if($i!=size($sel)-1) $returnVal=$returnVal+",";
+		}
+		$returnVal=$returnVal+"}";	
+	return 	($returnVal);
+}

@@ -1,0 +1,13 @@
+global proc string zenPluginExt()
+{
+	if(`about -os`=="nt" || `about -os`=="win64")
+		return ".mll";
+
+	if(`about -os`=="linux" || `about -os`=="linux64")
+		return ".so";
+
+	if(`about -os`=="mac")
+		return ".lib";
+
+	return ".so";
+}

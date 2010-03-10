@@ -1,0 +1,38 @@
+//create alligned curve nodes between given edge loops
+global proc string[] zenAlignedCurveNodesFromEdgeLoops(string $sel[],int $degree)
+{
+		$sel=`ls -fl $sel`;
+	string	$edgesString[]=zenOrderLoopRings(zenIsolateLoops($sel));//`zenIsolateAllignedLoops $sel`;
+		$edgesString=`zenOrderLoopRings $edgesString`;
+	string	$newCurve[];
+	string	$commonEdges[];
+	string	$edges[];
+	int	$progress;
+	
+		if(size($edgesString)>3)
+		{
+			progressWindow -title "Working" -status "Creating Curve History" -progress 0 -ii 1 -max (size($edgesString));
+			$progress=1;
+		}
+		
+		for($i=0;$i<size($edgesString);$i++)
+		{
+			$edges=`stringToStringArray $edgesString[$i] ","`;
+			$newCurve[$i]=`zenEdgeCurveNode $edges $degree`;
+			
+			if($progress)
+			{
+				progressWindow -e -s 1;
+				if(`progressWindow -q -ic`)
+				{
+					progressWindow -ep;
+					error "User Interupt.";
+				}
+			}
+		}
+		
+		progressWindow -ep;
+		
+		$newCurve=`stringArrayRemove {""} $newCurve`;
+	return 	$newCurve;
+}

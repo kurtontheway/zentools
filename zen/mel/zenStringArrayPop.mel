@@ -1,0 +1,18 @@
+global proc string[] zenStringArrayPop( string $array[], int $indices[] )
+{
+		$indices=sort($indices);
+			
+	string	$newArray[];
+	int	$n=0;
+	int	$size=size($indices);
+	
+		for( $i=0; $i < size($array); $i++ )
+		{
+			if( $n < $size && $i==$indices[$n] )
+				$n++;
+			else
+				$newArray[size($newArray)]=$array[$i];
+		}
+		
+	return 	$newArray;
+}

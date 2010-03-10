@@ -1,0 +1,14 @@
+//transfers uvs from one mesh to another
+global proc doZenTransferUV()
+{	
+	global	int	$zenOptions_transferUVSpace,
+			$zenOptions_transferUVaccurateEval;
+	
+		waitCursor -state on;
+
+		int $err=catch(`zenTransferUV $zenOptions_transferUVSpace $zenOptions_transferUVaccurateEval`);
+
+		if($err) progressWindow -ep;
+
+		waitCursor -state off;
+}

@@ -1,0 +1,7 @@
+global proc string zenSeparatorString()
+{
+	if(`about -os`=="nt" || `about -os`=="win64")
+		return ";";
+	else
+		return ":";
+}

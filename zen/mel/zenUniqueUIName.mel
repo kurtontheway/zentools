@@ -1,0 +1,12 @@
+//returns the input string as a unique object name
+global proc string zenUniqueUIName(string $name)
+{
+	string	$all[]=`lsUI -p -ed -wnd -ctl -cl -col -rmc -m -mi -ctx -ct`;
+	string	$allElse[]=`stringArrayRemove {$name} $all`;
+		if(size($all)>size($allElse))
+		{
+			$name=`zenNumberSuffix $name`;
+			$name=`zenUniqueName $name`;
+		}
+	return 	$name;
+}

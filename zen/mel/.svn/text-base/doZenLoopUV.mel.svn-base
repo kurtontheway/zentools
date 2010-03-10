@@ -1,0 +1,29 @@
+global proc doZenLoopUV()
+{	
+	global 	int	$zenOptions_zenLoopUVcurveType,
+			$zenOptions_zenLoopUVDistributionType,
+			$zenOptions_safeUVLoop;
+	
+	string	$command=
+		(
+				"zenLoopUV "+
+				(string($zenOptions_zenLoopUVcurveType))+" "+
+				(string($zenOptions_zenLoopUVDistributionType))+" "+
+				" 0 "+
+				"\"\";"
+		);
+		
+	int	$err;
+	string	$unit=`currentUnit -q -l`;
+		currentUnit -l cm;
+
+		$err=catch(`evalEcho($command)`);
+
+		if($err)
+		{
+			progressWindow -ep;
+			undoInfo -swf 1;
+		}
+
+		currentUnit -l $unit;
+}	

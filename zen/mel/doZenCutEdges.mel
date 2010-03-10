@@ -1,0 +1,12 @@
+global proc doZenCutEdges()
+{
+	waitCursor -state on;
+
+	select `polyListComponentConversion -fe -te`;
+
+	int $err=catch(zenCutEdges(`ls -sl -fl`));
+	
+	if($err) progressWindow -ep;
+	
+	waitCursor -state off;
+}

@@ -1,0 +1,17 @@
+global proc string[] zenStringArrayMatchOrder(string $matchFrom[], string $matchTo[], string $targetArray[])
+{
+	int	$matchNumArray[];
+	string	$returnArray[];
+		
+		for($i=0;$i<size($matchTo);$i++)
+		{
+			for($n=0;$n<size($matchFrom);$n++)
+				if($matchTo[$i]==$matchFrom[$n])
+					$matchNumArray[$i]=$n;
+		}
+		
+		for($i=0;$i<size($matchTo) && $i<size($targetArray);$i++)
+			$returnArray[$i]=$targetArray[$matchNumArray[$i]];
+		
+	return	$returnArray;
+}

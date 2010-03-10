@@ -1,0 +1,15 @@
+//returns string array $uvPoints in order of distance from uv $uv
+global proc string[] zenSortUVsByDistance(string $uv, string $uvPoints[])
+{
+		$uvPoints=`stringArrayRemove {$uv} $uvPoints`;
+	int	$distances[]=`zenUVEdgeDistance $uv $uvPoints`;
+	string 	$ordered[];
+	int 	$edgeDistance;
+		$ordered[0]=$uv;
+		for($i=0;$i<(size($uvPoints));$i++)
+		{
+			$ordered[($distances[$i])]=$uvPoints[$i];
+		}
+		$ordered=`stringArrayRemove {""} $ordered`;
+		return $ordered;
+}

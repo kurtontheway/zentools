@@ -1,0 +1,4 @@
+global proc zenLoopUV(int $type, int $distributionType,int $keepCurve, string $zenChordLengthObj)
+{
+	zenLoop $type $distributionType $keepCurve $zenChordLengthObj;
+}

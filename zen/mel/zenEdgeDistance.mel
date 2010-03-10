@@ -1,0 +1,70 @@
+//return the edge distance between two or more vertices
+global proc int[] zenEdgeDistance( string $vert,string $verts[] )
+{
+		if(!size($verts)) return {};
+	
+	string	$obj=zenReturnFirstStringItem(`stringToStringArray $vert "."`);
+	int	$vertCount=zenReturnFirstIntegerItem(`polyEvaluate -v $obj`);
+	string 	$vertices[]={$vert};
+	string 	$nextVertices[];
+	string	$vertEdges[];
+	int	$distance[];
+	int	$found;
+	string	$tempArray[];
+	int	$showPW=false;
+		
+		for($i=0;$i<$vertCount;$i++)
+		{
+			$vertEdges=`polyListComponentConversion -te $vertices`;
+			$nextVertices=`polyListComponentConversion -tv $vertEdges`;
+			$nextVertices=`ls -fl $nextVertices`;			
+			
+			for($n=0;$n<size($verts);$n++)
+			{
+				if(`stringArrayContains $verts[$n] $nextVertices`)
+				{
+					if($distance[$n]==0)
+					{
+						$found++;
+						$distance[$n]=$i+1;
+					}				
+				}
+			}
+			if($i>15)
+			{
+				progressWindow -ii 1 -progress 15 -max 25 -status "Calculating Edge Distance" -title "Working";
+				$showPW=true;
+			}
+			
+			if($found==size($verts))
+			{
+				if($showPW) progressWindow -endProgress;
+				return $distance;
+			}
+			
+			if(size($nextVertices)==size($vertices))
+			{
+				if($showPW) progressWindow -endProgress;
+				error("Vertices must be on the same mesh.");
+			}
+			
+			$vertices=$nextVertices;
+			
+			if($showPW)
+			{
+				progressWindow -e -s 1;
+				if(`progressWindow -q -ic`)
+				{
+					if($showPW) progressWindow -endProgress;
+					error "User Interupt.";				
+				}
+				if(`progressWindow -q -progress`>=`progressWindow -q -max`)
+					progressWindow -e -progress 0;
+			}
+		}
+		
+		progressWindow -endProgress;
+		
+		
+	return 	{};
+}

@@ -1,0 +1,26 @@
+global proc doZenMirrorInfluences()
+{	
+	global	int	$zenOptions_mirrorInfluencesAxis,
+			$zenOptions_mirrorInfluencesPosNeg;
+			
+	global	float	$zenOptions_tol;
+	
+	global	string	$zenOptionString_mirrorWeightType;
+	
+	string	$command=
+		(
+			"rigZenMirrorInfluences "+
+			(string($zenOptions_mirrorInfluencesAxis))+" "+
+			(string($zenOptions_mirrorInfluencesPosNeg))+" "+
+			(string($zenOptions_tol))+" "+
+			"\""+$zenOptionString_mirrorWeightType+"\""
+		);
+		
+	int	$err=catch(`evalEcho $command`);
+	
+		if($err)
+		{
+			progressWindow -ep;
+			undoInfo -swf 1;
+		}			
+}

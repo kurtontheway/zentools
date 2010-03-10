@@ -1,0 +1,38 @@
+"Package utilities."
+import sys
+from zen.iterable import iterable
+def moveDef(*args,**keywords):
+    """moveDef(source,destination,**keywords)
+Moves the contents of one module to another, 
+or a function or class from one module into a another, 
+and fixes references to aforementioned within specified packages.
+Arguments
+    source: string denoting an existing function, class, or module ( default namespace ).
+    destination: string denoting a new or existing function, class, module, or file path. 
+Options
+    searchAll: bool
+        if True: check all installed packages to see if they reference the module being moved / renamed       
+    packages OR pk: list of strings
+        a list of packages or modules to check in addition to the parent package
+    """
+    #parse options & arguments
+    packages=[]
+    shortNames={
+        'sa':'searchAll',
+        'pk':'packages',
+    }
+    for k in keywords:
+        if k in locals():
+            exec(k+'=keywords[k]')
+        elif k in shortNames:
+            exec(shortNames[k]+'=keywords[k]')
+    try:#if it's a module move the entire contents
+        m=__import__(a)
+        get="*"
+        if "__path__" in dir(m):#it's a package
+            pass
+    except:#otherwise find what it needs
+        get=a.split('.')[-1]
+        m=__import__(a.split('.')[:-1])
+        if "__path__" in dir(m):#it's a package
+            pass

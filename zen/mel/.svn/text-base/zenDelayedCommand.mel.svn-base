@@ -1,0 +1,25 @@
+global proc zenDelayCommands(string $command)
+{
+	global	string	$zenDelayedCommands;
+	global	int	$zenDelayedCommandsSJ;
+	
+	int	$SJExists=false;
+
+		if(size($zenDelayedCommands))
+			$SJExists=true;
+
+	string	$commandArray[]=stringArrayCatenate
+		(
+			stringToStringArray($command,";"),
+			stringToStringArray($zenDelayedCommands,";")
+		);
+		
+		$commandArray=stringArrayRemoveDuplicates($commandArray);
+		$zenDelayedCommands=stringArrayToString($commandArray,";");
+		
+	string	$commandsDelayed=$zenDelayedCommands+";global int $zenDelayedCommandsSJ=0;print $zenDelayedCommands;global string $zenDelayedCommands=\"\"";
+		
+		if($SJExists && $zenDelayedCommandsSJ!=0) scriptJob -kill $zenDelayedCommandsSJ;
+			
+		$zenDelayedCommandsSJ=`scriptJob -ro true -ie $commandsDelayed`;
+}

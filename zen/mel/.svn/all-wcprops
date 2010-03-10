@@ -1,0 +1,1043 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/17/zentools/src/zen/mel
+END
+doZenCurvesFromEdges.mel
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenCurvesFromEdges.mel
+END
+layoutZenCurveSpans.mel
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/17/zentools/src/zen/mel/layoutZenCurveSpans.mel
+END
+zenSortUVsByDistance.mel
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/zentools/src/zen/mel/zenSortUVsByDistance.mel
+END
+doZenAttachSpans.mel
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenAttachSpans.mel
+END
+doZenLoop.mel
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenLoop.mel
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/17/zentools/src/zen/mel/__init__.py
+END
+zenBlindDataTemplate_opposingVert.mel
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/17/zentools/src/zen/mel/zenBlindDataTemplate_opposingVert.mel
+END
+doZenConfineWeights.mel
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenConfineWeights.mel
+END
+zenTools.mel
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/17/zentools/src/zen/mel/zenTools.mel
+END
+zenMimicSelection.mel
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/zentools/src/zen/mel/zenMimicSelection.mel
+END
+zenLoft.mel
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/17/zentools/src/zen/mel/zenLoft.mel
+END
+zenFindEndUVs.mel
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFindEndUVs.mel
+END
+layoutZenPatchUV.mel
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/zentools/src/zen/mel/layoutZenPatchUV.mel
+END
+zenHistoryCleanup.mel
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/zentools/src/zen/mel/zenHistoryCleanup.mel
+END
+zenFindEdgeLoopEnds.mel
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFindEdgeLoopEnds.mel
+END
+zenAttachSpans.mel
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/17/zentools/src/zen/mel/zenAttachSpans.mel
+END
+zenReturnLastStringItem.mel
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/17/zentools/src/zen/mel/zenReturnLastStringItem.mel
+END
+zenReturnTopLevelTransforms.mel
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/17/zentools/src/zen/mel/zenReturnTopLevelTransforms.mel
+END
+rigZenMuscleAddAutoFlex.mel
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenMuscleAddAutoFlex.mel
+END
+zenNumberSuffix.mel
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/17/zentools/src/zen/mel/zenNumberSuffix.mel
+END
+zenAttachSurface.mel
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/zentools/src/zen/mel/zenAttachSurface.mel
+END
+zenStringArrayMatchOrder.mel
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/17/zentools/src/zen/mel/zenStringArrayMatchOrder.mel
+END
+doZenSetMuscleSystemBindPose.mel
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenSetMuscleSystemBindPose.mel
+END
+zenFindEndUV.mel
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFindEndUV.mel
+END
+rigZenFlipPose.mel
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenFlipPose.mel
+END
+layoutZenMirrorInfluences.mel
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/17/zentools/src/zen/mel/layoutZenMirrorInfluences.mel
+END
+layoutZenSetAttr.mel
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/zentools/src/zen/mel/layoutZenSetAttr.mel
+END
+layoutZenMuscle.mel
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/17/zentools/src/zen/mel/layoutZenMuscle.mel
+END
+zenShortestVertexPath.mel
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/17/zentools/src/zen/mel/zenShortestVertexPath.mel
+END
+zenAlignedCurveNodesFromEdgeLoops.mel
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/17/zentools/src/zen/mel/zenAlignedCurveNodesFromEdgeLoops.mel
+END
+zenProcLocationList.mel
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/17/zentools/src/zen/mel/zenProcLocationList.mel
+END
+rigZenMirrorInfluences.mel
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenMirrorInfluences.mel
+END
+rigZenMuscle.mel
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenMuscle.mel
+END
+zenReflectUV.mel
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/17/zentools/src/zen/mel/zenReflectUV.mel
+END
+zenUserInterface.mel
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/zentools/src/zen/mel/zenUserInterface.mel
+END
+zenMultiCurveFromEdgeLoopExe.mel
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/17/zentools/src/zen/mel/zenMultiCurveFromEdgeLoopExe.mel
+END
+zenArrayToVector.mel
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/zentools/src/zen/mel/zenArrayToVector.mel
+END
+zenVertsToUVs.mel
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/17/zentools/src/zen/mel/zenVertsToUVs.mel
+END
+zenIntArrayRemove.mel
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/zentools/src/zen/mel/zenIntArrayRemove.mel
+END
+layoutZenLoop.mel
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/17/zentools/src/zen/mel/layoutZenLoop.mel
+END
+zenFloatArrayCatenate.mel
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFloatArrayCatenate.mel
+END
+zenScriptsMenu.mel
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/17/zentools/src/zen/mel/zenScriptsMenu.mel
+END
+zenSelectionString.mel
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/17/zentools/src/zen/mel/zenSelectionString.mel
+END
+zenLoftBetweenEdgeLoopPathRings.mel
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/17/zentools/src/zen/mel/zenLoftBetweenEdgeLoopPathRings.mel
+END
+zenIsolateLoops.mel
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/17/zentools/src/zen/mel/zenIsolateLoops.mel
+END
+rigZenReturnLabelOrderedJoints.mel
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenReturnLabelOrderedJoints.mel
+END
+zenWriteStartup.mel
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/17/zentools/src/zen/mel/zenWriteStartup.mel
+END
+zenReturnStringArrayFormat.mel
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/17/zentools/src/zen/mel/zenReturnStringArrayFormat.mel
+END
+layoutZenLoopUV.mel
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/17/zentools/src/zen/mel/layoutZenLoopUV.mel
+END
+zenLoopUV.mel
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/17/zentools/src/zen/mel/zenLoopUV.mel
+END
+doZenTransferPointPositions.mel
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenTransferPointPositions.mel
+END
+zenUVEdgeDistance.mel
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/zentools/src/zen/mel/zenUVEdgeDistance.mel
+END
+zenReturnFirstStringItem.mel
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/17/zentools/src/zen/mel/zenReturnFirstStringItem.mel
+END
+layoutZenCurvesFromEdges.mel
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/17/zentools/src/zen/mel/layoutZenCurvesFromEdges.mel
+END
+zenAverageEdgeLength.mel
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/zentools/src/zen/mel/zenAverageEdgeLength.mel
+END
+zenFloodSelect.mel
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFloodSelect.mel
+END
+doZenLoopUV.mel
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenLoopUV.mel
+END
+rigZenLockTransforms.mel
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenLockTransforms.mel
+END
+zenPatchUV.mel
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/17/zentools/src/zen/mel/zenPatchUV.mel
+END
+zenDisplayText.mel
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/17/zentools/src/zen/mel/zenDisplayText.mel
+END
+doZenProportionateUVShells.mel
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenProportionateUVShells.mel
+END
+zenPluginExt.mel
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/17/zentools/src/zen/mel/zenPluginExt.mel
+END
+rigZenPoseDrivenPolyAverage.mel
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenPoseDrivenPolyAverage.mel
+END
+doZenReflectUV.mel
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenReflectUV.mel
+END
+zenShapePC.mel
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/17/zentools/src/zen/mel/zenShapePC.mel
+END
+zenLayerShaveOutput.mel
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/17/zentools/src/zen/mel/zenLayerShaveOutput.mel
+END
+zenDeferCommand.mel
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/17/zentools/src/zen/mel/zenDeferCommand.mel
+END
+zenReturnFirstIntegerItem.mel
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/17/zentools/src/zen/mel/zenReturnFirstIntegerItem.mel
+END
+zenReturnUVShellFaces.mel
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/17/zentools/src/zen/mel/zenReturnUVShellFaces.mel
+END
+zenStringArrayPop.mel
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/zentools/src/zen/mel/zenStringArrayPop.mel
+END
+zenSetAttr.mel
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/17/zentools/src/zen/mel/zenSetAttr.mel
+END
+zenStringArrayIntersect.mel
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/17/zentools/src/zen/mel/zenStringArrayIntersect.mel
+END
+zenGetLine.mel
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/17/zentools/src/zen/mel/zenGetLine.mel
+END
+doZenLoft.mel
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenLoft.mel
+END
+rigZenFindOpposites.mel
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenFindOpposites.mel
+END
+doZenAutoMap.mel
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenAutoMap.mel
+END
+layoutZenReflectUV.mel
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/17/zentools/src/zen/mel/layoutZenReflectUV.mel
+END
+layoutZenTransferUV.mel
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/17/zentools/src/zen/mel/layoutZenTransferUV.mel
+END
+zenVertexSymmetryNode.mel
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/17/zentools/src/zen/mel/zenVertexSymmetryNode.mel
+END
+layoutZenManageScripts.mel
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/17/zentools/src/zen/mel/layoutZenManageScripts.mel
+END
+zenTransferUV.mel
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/17/zentools/src/zen/mel/zenTransferUV.mel
+END
+zenVectorToArray.mel
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/zentools/src/zen/mel/zenVectorToArray.mel
+END
+zenOrderedEdgeRingPath.mel
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/17/zentools/src/zen/mel/zenOrderedEdgeRingPath.mel
+END
+zenFindEndVert.mel
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFindEndVert.mel
+END
+zenIntArraySector.mel
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/zentools/src/zen/mel/zenIntArraySector.mel
+END
+doZenMirrorInfluences.mel
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenMirrorInfluences.mel
+END
+zenParentShape.mel
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/17/zentools/src/zen/mel/zenParentShape.mel
+END
+zenFillFloatArray.mel
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFillFloatArray.mel
+END
+doZenReconstructMesh.mel
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenReconstructMesh.mel
+END
+zenQueryFlippedEdgeRingPaths.mel
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/17/zentools/src/zen/mel/zenQueryFlippedEdgeRingPaths.mel
+END
+zenTools_defaultOptions.mel
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/17/zentools/src/zen/mel/zenTools_defaultOptions.mel
+END
+rigZenMirrorSkeleton.mel
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenMirrorSkeleton.mel
+END
+zenFloatArraySector.mel
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFloatArraySector.mel
+END
+doZenComprehensiveHistoryCleanup.mel
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenComprehensiveHistoryCleanup.mel
+END
+zenScriptFolderLocationList.mel
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/17/zentools/src/zen/mel/zenScriptFolderLocationList.mel
+END
+zenFindEdgeSelectionEndVerts.mel
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFindEdgeSelectionEndVerts.mel
+END
+zenLinkAttr.mel
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/17/zentools/src/zen/mel/zenLinkAttr.mel
+END
+rigZenPoseDrivenWeight.mel
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenPoseDrivenWeight.mel
+END
+zenAggregateLength.mel
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/17/zentools/src/zen/mel/zenAggregateLength.mel
+END
+zenLoopRing.mel
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/17/zentools/src/zen/mel/zenLoopRing.mel
+END
+zenExpandAlongLoop.mel
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/17/zentools/src/zen/mel/zenExpandAlongLoop.mel
+END
+doZenCommand.mel
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenCommand.mel
+END
+rigZenGoToPose.mel
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenGoToPose.mel
+END
+layoutZenLoft.mel
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/17/zentools/src/zen/mel/layoutZenLoft.mel
+END
+zenCurvesFromEdges.mel
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/17/zentools/src/zen/mel/zenCurvesFromEdges.mel
+END
+zenDelayedCommand.mel
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/zentools/src/zen/mel/zenDelayedCommand.mel
+END
+zenVertLoop.mel
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/17/zentools/src/zen/mel/zenVertLoop.mel
+END
+zenLoftEdges.mel
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/17/zentools/src/zen/mel/zenLoftEdges.mel
+END
+zenEdgeCurveNode.mel
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/zentools/src/zen/mel/zenEdgeCurveNode.mel
+END
+zenSortVertsByDistance.mel
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/17/zentools/src/zen/mel/zenSortVertsByDistance.mel
+END
+zenLoadScriptsFolder.mel
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/zentools/src/zen/mel/zenLoadScriptsFolder.mel
+END
+layoutSurfaceBetweenEdgeLoops.mel
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/17/zentools/src/zen/mel/layoutSurfaceBetweenEdgeLoops.mel
+END
+doZenCutEdges.mel
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenCutEdges.mel
+END
+zenSeparatorString.mel
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/17/zentools/src/zen/mel/zenSeparatorString.mel
+END
+zenUniformSurfaceRebuild.mel
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/17/zentools/src/zen/mel/zenUniformSurfaceRebuild.mel
+END
+doZenTransferComponentSelection.mel
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenTransferComponentSelection.mel
+END
+zenFillIntegerArray.mel
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFillIntegerArray.mel
+END
+zenUVsToVerts.mel
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/17/zentools/src/zen/mel/zenUVsToVerts.mel
+END
+zenUniqueName.mel
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/17/zentools/src/zen/mel/zenUniqueName.mel
+END
+zenLoop.mel
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/17/zentools/src/zen/mel/zenLoop.mel
+END
+zenSaveOptions.mel
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/17/zentools/src/zen/mel/zenSaveOptions.mel
+END
+zenCompID.mel
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/17/zentools/src/zen/mel/zenCompID.mel
+END
+zenLoadPluginsFolder.mel
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/zentools/src/zen/mel/zenLoadPluginsFolder.mel
+END
+zenEdgeLoopFromVertLoop.mel
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/17/zentools/src/zen/mel/zenEdgeLoopFromVertLoop.mel
+END
+zenVertLoopFromEdgeLoop.mel
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/17/zentools/src/zen/mel/zenVertLoopFromEdgeLoop.mel
+END
+zenEdgeDistance.mel
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/17/zentools/src/zen/mel/zenEdgeDistance.mel
+END
+doZenSelectEdgeLoopBetweenVerts.mel
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenSelectEdgeLoopBetweenVerts.mel
+END
+rigZenReturnOpposingTransforms.mel
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenReturnOpposingTransforms.mel
+END
+zenFirstIndexOfStringInArray.mel
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFirstIndexOfStringInArray.mel
+END
+zenPlacementInStringArray.mel
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/17/zentools/src/zen/mel/zenPlacementInStringArray.mel
+END
+zenStringArraySector.mel
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/zentools/src/zen/mel/zenStringArraySector.mel
+END
+zenReturnOppositeVerts.mel
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/17/zentools/src/zen/mel/zenReturnOppositeVerts.mel
+END
+zenProcDirectory.mel
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/zentools/src/zen/mel/zenProcDirectory.mel
+END
+doZenPatchUV.mel
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenPatchUV.mel
+END
+zenFloatArrayToString.mel
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFloatArrayToString.mel
+END
+zenUniqueObjectName.mel
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/17/zentools/src/zen/mel/zenUniqueObjectName.mel
+END
+zenFindWorkspace.mel
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFindWorkspace.mel
+END
+doZenAttachSurface.mel
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenAttachSurface.mel
+END
+zenReverseStringArray.mel
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/17/zentools/src/zen/mel/zenReverseStringArray.mel
+END
+zenStringArrayReplace.mel
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/17/zentools/src/zen/mel/zenStringArrayReplace.mel
+END
+zenUVDistanceList.mel
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/zentools/src/zen/mel/zenUVDistanceList.mel
+END
+zenCutEdges.mel
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/17/zentools/src/zen/mel/zenCutEdges.mel
+END
+zenShortestUVPath.mel
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/zentools/src/zen/mel/zenShortestUVPath.mel
+END
+zenNextPlug.mel
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/17/zentools/src/zen/mel/zenNextPlug.mel
+END
+zenOrderLoopRings.mel
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/zentools/src/zen/mel/zenOrderLoopRings.mel
+END
+zenWrap.mel
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/17/zentools/src/zen/mel/zenWrap.mel
+END
+zenLP.mel
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/17/zentools/src/zen/mel/zenLP.mel
+END
+zenFillStringArray.mel
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFillStringArray.mel
+END
+rigZenFindRootJoints.mel
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenFindRootJoints.mel
+END
+doZenAttach.mel
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenAttach.mel
+END
+zenEdgeLengthRatios.mel
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/17/zentools/src/zen/mel/zenEdgeLengthRatios.mel
+END
+zenCurvesBetweenEdges.mel
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/17/zentools/src/zen/mel/zenCurvesBetweenEdges.mel
+END
+zenMoveVertsToUVs.mel
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/zentools/src/zen/mel/zenMoveVertsToUVs.mel
+END
+zenListRenderableCameras.mel
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/17/zentools/src/zen/mel/zenListRenderableCameras.mel
+END
+zenReturnFirstFloatItem.mel
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/17/zentools/src/zen/mel/zenReturnFirstFloatItem.mel
+END
+zenMayaVersion.mel
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/17/zentools/src/zen/mel/zenMayaVersion.mel
+END
+zenCompFromID.mel
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/17/zentools/src/zen/mel/zenCompFromID.mel
+END
+zenFirstOpenPlug.mel
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFirstOpenPlug.mel
+END
+zenObjectSpaceDistanceNode.mel
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/17/zentools/src/zen/mel/zenObjectSpaceDistanceNode.mel
+END
+zenUniqueUIName.mel
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/17/zentools/src/zen/mel/zenUniqueUIName.mel
+END
+zenUniqueCommandName.mel
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/zentools/src/zen/mel/zenUniqueCommandName.mel
+END
+zenMapUnmappedFaces.mel
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/17/zentools/src/zen/mel/zenMapUnmappedFaces.mel
+END
+layoutZenConfineWeights.mel
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/17/zentools/src/zen/mel/layoutZenConfineWeights.mel
+END
+zenNurbsToPolyUV.mel
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/zentools/src/zen/mel/zenNurbsToPolyUV.mel
+END
+zenOrderedVertexLoop.mel
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/zentools/src/zen/mel/zenOrderedVertexLoop.mel
+END
+zenIsolateAllignedLoops.mel
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/17/zentools/src/zen/mel/zenIsolateAllignedLoops.mel
+END
+rigZenConfineWeights.mel
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenConfineWeights.mel
+END
+rigZenMakeNodesNonKeyable.mel
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/17/zentools/src/zen/mel/rigZenMakeNodesNonKeyable.mel
+END
+zenUniqueVarName.mel
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/zentools/src/zen/mel/zenUniqueVarName.mel
+END
+zenAdjacentEdges.mel
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/17/zentools/src/zen/mel/zenAdjacentEdges.mel
+END
+doZenTransferUV.mel
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/17/zentools/src/zen/mel/doZenTransferUV.mel
+END
+zenFindEndUVsFast.mel
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/17/zentools/src/zen/mel/zenFindEndUVsFast.mel
+END
+zenReverseIntArray.mel
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/17/zentools/src/zen/mel/zenReverseIntArray.mel
+END

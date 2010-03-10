@@ -1,0 +1,31 @@
+global proc doZenLoop()
+{
+	global 	string	$zenChordLengthObj;
+	
+	global 	int	$zenOptions_curveType,
+			$zenOptions_loopDistributionType,
+			$zenOptions_keepCurve;
+	
+	string	$command=
+		(
+				"zenLoop "+
+				(string($zenOptions_curveType))+" "+
+				(string($zenOptions_loopDistributionType))+" "+
+				(string($zenOptions_keepCurve))+" "+
+				("\""+string($zenChordLengthObj)+"\"")+";"
+		);
+		
+	int	$err;
+	string	$unit=`currentUnit -q -l`;
+		currentUnit -l cm;
+
+		$err=catch(`evalEcho($command)`);
+
+		if($err)
+		{
+			progressWindow -ep;
+			undoInfo -swf 1;
+		}
+
+		currentUnit -l $unit;
+}	

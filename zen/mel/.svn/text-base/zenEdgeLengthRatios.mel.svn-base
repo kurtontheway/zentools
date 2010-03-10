@@ -1,0 +1,11 @@
+global proc float[] zenEdgeLengthRatios(string $edges[])
+{
+	float	$total=`zenAggregateLength $edges`;
+	float	$ratios[];
+	float	$length;
+		for($i=0;$i<size($edges);$i++){
+			$length=$length+arclen($edges[$i]);
+			$ratios[$i]=$length/$total;
+		}
+	return	$ratios;
+}

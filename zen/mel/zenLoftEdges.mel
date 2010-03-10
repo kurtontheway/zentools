@@ -1,0 +1,50 @@
+//create a loft between 2 or more edge loops
+global proc string[] zenLoftEdges(string $edgesString[])
+{
+	string	$loftNode=`createNode -n "loftBetweenEdges#" loft`;
+	
+	string	$curves[];
+	string	$commonEdges[];
+	string	$edges[];
+	
+		progressWindow -ii 1 -status "Lofting" -progress 0 -max (size($edgesString));
+		
+		for($i=0;$i<size($edgesString);$i++)
+		{
+			$edges=`stringToStringArray $edgesString[$i] ","`;
+			$curves[$i]=`zenEdgeCurveNode $edges 1`;
+			progressWindow -e -s 1;
+			
+			if(`progressWindow -q -ic`==1)
+			{
+				progressWindow -endProgress;
+				error "User Interupt.";
+			}
+		}
+		
+		$curves=`stringArrayRemove {""} $curves`;
+		
+		for($i=0;$i<size($curves);$i++)
+		{
+			connectAttr ($curves[$i]+".outputCurve") ($loftNode+".inputCurve["+(string($i))+"]");
+		}
+	
+	string	$nurbsSurfaceTr=`createNode -n "zenLoft#" transform`;
+	string 	$nurbsSurface=`createNode -n ($nurbsSurfaceTr+"Shape") -p $nurbsSurfaceTr nurbsSurface`;
+	string	$rebuiltSurface=`createNode -n "rebuildSurfaceBetweenEdge#" rebuildSurface`;
+	
+		connectAttr -f ($loftNode+".outputSurface") ($rebuiltSurface+".inputSurface");
+		connectAttr -f ($loftNode+".outputSurface") ($nurbsSurface+".create");
+		
+		setAttr ($rebuiltSurface+".spansU") `getAttr ($nurbsSurface+".spansU")`;
+		setAttr ($rebuiltSurface+".spansV") `getAttr ($nurbsSurface+".spansV")`;
+		setAttr ($rebuiltSurface+".keepRange") 0;
+		setAttr ($rebuiltSurface+".endKnots") 1;
+		setAttr ($rebuiltSurface+".direction") 0;
+		
+		connectAttr -f ($rebuiltSurface+".outputSurface") ($nurbsSurface+".create");
+			
+		progressWindow -endProgress;
+		
+	return	{$rebuiltSurface,$nurbsSurface};
+}

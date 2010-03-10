@@ -1,0 +1,21 @@
+global proc int [] zenIntArrayRemove( int $items[], int $list[] )
+{
+	int	$item, $listItem, $result[];
+	int	$keep, $resultIndex = 0;
+	
+		for ($listItem in $list) 
+		{
+			$keep = 1;
+			for ($item in $items) 
+			{
+				if ($item == $listItem) 
+				{
+					$keep = 0;
+					break;
+				}
+			}
+			if ($keep) $result[$resultIndex++] = $listItem;
+		}
+	
+	return	$result;
+}

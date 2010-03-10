@@ -1,0 +1,18 @@
+//select an edge loop between given vertices
+global proc string[] doZenSelectEdgeLoopBetweenVerts()
+{
+		waitCursor -state on;
+		
+	string 	$sel[]=	`ls -sl -fl`;
+	string	$verts[]=`polyListComponentConversion -fv -tv`;
+		$verts=`ls -fl $verts`;
+	string	$vertLoop[]=`zenVertLoop $verts`;
+	string	$nonVerts[]=`stringArrayRemove $verts $sel`;
+	string	$edgeLoops[]=`zenEdgeLoopFromVertLoop $vertLoop`;
+	string	$returnVal[]=`stringArrayCatenate $nonVerts $edgeLoops`;
+		select $returnVal;  
+		
+		waitCursor -state off;
+	
+	return 	$returnVal;
+}

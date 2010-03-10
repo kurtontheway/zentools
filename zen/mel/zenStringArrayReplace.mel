@@ -1,0 +1,7 @@
+global proc string[] zenStringArrayReplace(string $old, string $new, string $array[])
+{
+		for($string in $array)
+			if($old==$string) $old=$new;
+		
+	return 	$array;
+}

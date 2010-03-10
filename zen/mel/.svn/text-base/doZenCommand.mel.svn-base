@@ -1,0 +1,19 @@
+//execute a command and add it to the repeatLast command list
+global proc doZenCommand(string $command)
+{
+	int	$err;
+	string	$unit=`currentUnit -q -l`;
+		currentUnit -l cm;
+		
+		repeatLast -addCommand $command;
+		
+		$err=catch(`evalEcho($command)`);
+		
+		if($err)
+		{
+			progressWindow -ep;
+			zenDeferCommand("undoInfo -swf 1");
+		}
+		
+		currentUnit -l $unit;
+}

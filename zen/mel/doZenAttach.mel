@@ -1,0 +1,22 @@
+//execute zenAttach, store the command, and add it to the repeatLast command list
+global proc doZenAttachSurface()
+{
+	global 	int	$zenOptions_attachSurfaceDegree;
+	global 	int	$zenOptions_attachSurfaceShave;
+	global 	int	$zenOptions_attachShave;
+			
+		string	$command=
+		(
+			"zenAttachSurface "+
+			(string($zenOptions_attachSurfaceDegree))+" "+
+			(string($zenOptions_attachSurfaceShave))
+		);
+								
+		$err=catch(`evalEcho($command)`);
+				
+		if($err)
+		{
+			progressWindow -ep;
+			undoInfo -swf 1;
+		}
+}

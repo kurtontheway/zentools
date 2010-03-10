@@ -1,0 +1,10 @@
+//returns the input string as a unique command name
+global proc string zenUniqueCommandName(string $name)
+{
+		if(`exists $name`)
+		{
+			$name=`zenNumberSuffix $name`;
+			$name=`zenUniqueCommandName $name`;
+		}
+	return 	$name;
+}

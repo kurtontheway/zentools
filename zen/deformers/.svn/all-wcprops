@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/17/zentools/src/zen/deformers
+END
+muscle.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/17/zentools/src/zen/deformers/muscle.py
+END
+wrap.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/17/zentools/src/zen/deformers/wrap.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/17/zentools/src/zen/deformers/__init__.py
+END
+geoConnect.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/17/zentools/src/zen/deformers/geoConnect.py
+END
+blendShape.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/17/zentools/src/zen/deformers/blendShape.py
+END

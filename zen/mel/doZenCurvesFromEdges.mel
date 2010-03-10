@@ -1,0 +1,19 @@
+//execute zenAttach, store the command, and add it to the repeatLast command list
+global proc doZenCurvesFromEdges()
+{
+	global 	int	$zenOptions_attachCurvesDegree;
+			
+		string	$command=
+		(
+			"zenCurvesFromEdges "+
+			(string($zenOptions_attachCurvesDegree))
+		);
+								
+		$err=catch(`evalEcho($command)`);
+				
+		if($err)
+		{
+			progressWindow -ep;
+			undoInfo -swf 1;
+		}
+}

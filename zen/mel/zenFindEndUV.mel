@@ -1,0 +1,15 @@
+//finds end uvs
+global proc string zenFindEndUV(string $uvPoints[])
+{
+	string	$returnVal;
+		$uvPoints=`ls -fl $uvPoints`;
+		if(size($uvPoints)<3) return $uvPoints[0];
+	
+	string 	$uv=$uvPoints[0];		
+		$otherUVs=`stringArrayRemove {$uv} $uvPoints`;
+		$otherUVs=`zenSortUVsByDistance $uv $otherUVs`;
+		$otherUVs=`stringArrayRemove {""," ",","} $otherUVs`;
+		$returnVal=$otherUVs[size($otherUVs)-1];
+		
+	return	$returnVal;
+}

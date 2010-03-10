@@ -1,0 +1,7 @@
+//returns a string array of size $count
+global proc string[] zenFillStringArray(int $count)
+{
+	string 	$array[];
+		$array[($count-1)]="";
+	return 	$array;
+}

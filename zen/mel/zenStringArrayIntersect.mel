@@ -1,0 +1,25 @@
+//zenStringArrayIntersect returns the values shared by $A and $B maintaining the order of A		
+global proc string[] zenStringArrayIntersect(string $listA[],string $listB[])
+{
+	string	$item, 
+		$listItem, 
+		$result[];
+	int	$keep, 
+		$resultIndex = 0;
+	
+	for ($listItem in $listA)
+	{
+		$keep = 0;
+		for ($item in $listB)
+		{
+			if ($item == $listItem)
+			{
+				$keep = 1;
+				break;
+			}
+		}
+		if ($keep) $result[$resultIndex++] = $listItem;
+	}
+	
+	return $result;
+}

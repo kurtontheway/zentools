@@ -1,0 +1,53 @@
+global proc string zenLoadScriptsFolder( string $dir, int $reSource )
+{
+		$dir=$dir+"/";
+
+	string	$loaded;
+	string	$scripts[];
+	string	$dir;
+	string	$command[];
+	int	$failed;
+
+		$scripts=`getFileList -folder $dir -filespec "*.mel"`;
+
+		if(!size($scripts)) return "";
+
+	int	$scriptsToLoad=size($scripts);
+		if($reSource) $scriptsToLoad=$scriptsToLoad*2;
+
+		if(`progressWindow -q -progress`==0)
+		{
+			progressWindow
+				-isInterruptable 1
+				-title "Working"
+				-status "Loading Scripts"
+				-max $scriptsToLoad;
+		}
+
+		for($i=0;$i<size($scripts);$i++)
+		{
+			if($scripts[$i]!="userSetup.mel")
+			{
+				$failed=catchQuiet(`eval("source \""+$dir+$scripts[$i]+"\"")`);
+				if($failed)
+					$loaded=$loaded+($scripts[$i]+" failed to load.\n");
+				else
+					$loaded=$loaded+($scripts[$i]+" loaded.\n");
+			}
+
+			progressWindow -e -s 1;
+
+			if(`progressWindow -q -ic`==1)
+			{
+				progressWindow -endProgress;
+				error "User Interupt.";
+			}
+		}
+
+		if($reSource)
+			$loaded=`zenLoadScriptsFolder $dir 0`;
+
+		progressWindow -endProgress;
+
+	return	$loaded;
+}

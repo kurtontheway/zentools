@@ -1,0 +1,30 @@
+global proc doZenLoft()
+{
+	global 	string	$zenLoftChordLengthObj;
+	
+	//options
+	global	int	$zenOptions_loftDistribution;
+	global	int	$zenOptions_keepLoftedSurface;
+		
+	string	$command=
+		(
+			"zenLoft "+
+			(string($zenOptions_loftDistribution))+" "+
+			(string($zenOptions_keepLoftedSurface))+" "+
+			("\""+$zenLoftChordLengthObj+"\"")+";"
+		);
+		
+	int	$err;
+	string	$unit=`currentUnit -q -l`;
+		currentUnit -l cm;
+				
+		$err=catch(`evalEcho($command)`);
+		
+		if($err)
+		{
+			progressWindow -ep;
+			undoInfo -swf 1;
+		}
+		
+		currentUnit -l $unit;
+}

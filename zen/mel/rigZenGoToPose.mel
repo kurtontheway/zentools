@@ -1,0 +1,20 @@
+global proc int rigZenGoToPose(string $pose)
+{
+		if(!objExists($pose))
+			return false;
+	
+		eval("DisableAll");
+		
+	int	$success=true;		
+	int	$err=true;
+	
+		for( $i=0; $i<10 && $err ; $i++ )
+			$err=catchQuiet(`dagPose -r $pose`);
+		
+		if($err && size(`dagPose -q -ap $pose`))
+				$success=false;
+		
+		eval("EnableAll");
+		
+	return	$success;
+}

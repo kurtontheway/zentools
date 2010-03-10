@@ -1,0 +1,23 @@
+//execute zenAttach, store the command, and add it to the repeatLast command list
+global proc doZenAttachSpans()
+{
+	global 	int	$zenOptions_attachSpansDegree,
+			$zenOptions_attachSpansCount,
+			$zenOptions_attachSpansShave;
+			
+		string	$command=
+		(
+			"zenAttachSpans "+
+			(string($zenOptions_attachSpansDegree))+" "+
+			(string($zenOptions_attachSpansCount))+" "+
+			(string($zenOptions_attachSpansShave))
+		);
+								
+		$err=catch(`evalEcho($command)`);
+				
+		if($err)
+		{
+			progressWindow -ep;
+			undoInfo -swf 1;
+		}
+}

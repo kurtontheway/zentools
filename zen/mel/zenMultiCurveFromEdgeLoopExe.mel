@@ -1,0 +1,15 @@
+//create curves from selected edge loops
+global proc string[] zenMultiCurveFromEdgeLoopExe(int $degree)
+{
+	string	$sel[]=`ls -sl -fl`;
+	string	$newCurve[];
+	string	$curves[]=`zenAlignedCurveNodesFromEdgeLoops $sel $degree`;
+	
+		for($i=0;$i<size($newCurve);$i++)
+		{
+				$newCurve[$i]=`createNode -n "CurveFromEdgeLoop#" nurbsCurve`;
+				connectAttr -f ($curves[$i]+".outputCurve") ($newCurve[$i]+".create");
+		}
+		
+	return 	$newCurve;
+}

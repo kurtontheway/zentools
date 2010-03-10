@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/17/zentools/src/zen/constraints
+END
+rivet.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/17/zentools/src/zen/constraints/rivet.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/17/zentools/src/zen/constraints/__init__.py
+END
+constrainShape.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/17/zentools/src/zen/constraints/constrainShape.py
+END
+parentSpace.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/17/zentools/src/zen/constraints/parentSpace.py
+END

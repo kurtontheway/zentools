@@ -1,0 +1,20 @@
+global proc doZenConfineWeights()
+{
+	global 	int	$zenOptions_confineWeightsHierarchy;   
+	global	string	$zenOptionString_weightType;
+			
+		string	$command=
+		(
+			"rigZenConfineWeights "+
+			(string($zenOptions_confineWeightsHierarchy))+" "+
+			"\""+$zenOptionString_weightType+"\""
+		);
+								
+		$err=catch(`evalEcho($command)`);
+				
+		if($err)
+		{
+			progressWindow -ep;
+			undoInfo -swf 1;
+		}
+}

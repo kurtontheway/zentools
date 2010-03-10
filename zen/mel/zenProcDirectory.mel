@@ -1,0 +1,9 @@
+global proc string zenProcDirectory(string $procName)
+{
+		rehash;
+	string	$verbose=`whatIs ($procName)`;
+	string	$verboseArray[]=`stringToStringArray $verbose " "`;
+		$verboseArray=`stringArrayRemove {"Mel","procedure","found","in:",""," "} $verboseArray`;
+	string	$absolutePath=`stringArrayToString $verboseArray " "`;
+	return	$absolutePath;
+}

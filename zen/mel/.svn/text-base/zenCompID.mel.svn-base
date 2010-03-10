@@ -1,0 +1,19 @@
+//given a component name zenCompID returns that components ID as an integer value
+global proc int zenCompID(string $compName)
+{
+	int	$returnVal=int
+		(	zenReturnFirstStringItem
+			(
+				stringToStringArray
+				(
+					zenReturnLastStringItem
+					(
+						stringToStringArray($compName,"[")
+					),
+					"]"
+				)
+			)
+		);
+			
+	return $returnVal;
+}

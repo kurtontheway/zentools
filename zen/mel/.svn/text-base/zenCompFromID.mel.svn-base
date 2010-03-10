@@ -1,0 +1,11 @@
+//return an array of components given their id's
+//compType is the abbreviation for the component as found in it's selection string
+global proc string[] zenCompFromID(string $obj,string $compType,int $ID[])
+{
+	string	$components[];
+		for($i=0;$i<size($ID);$i++)
+		{
+			$components[$i]=($obj+"."+$compType+"["+(string($ID[$i]))+"]");
+		}
+	return	$components;
+}

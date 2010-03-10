@@ -1,0 +1,10 @@
+global proc zenDisplayText(string $windowTitle, string $text)
+{
+		window -t $windowTitle -w 800 -h 600 $windowTitle;
+		paneLayout -cn "single";
+			scrollField
+				-wordWrap false
+				-text $text 
+				-editable false;
+		showWindow;
+}

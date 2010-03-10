@@ -1,0 +1,10 @@
+//given a multi-input attribute, nextPlug determines the next available plug and returns it as an integer
+global proc int zenNextPlug(string $attr)
+{
+	string	$plugs[]=`ls ($attr+"[*]")`;
+		$plugs=sort($plugs);
+	
+	int	$endPlug=zenCompID(zenReturnLastStringItem($plugs))+1;
+	
+	return $endPlug;	
+}

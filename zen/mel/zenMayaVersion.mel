@@ -1,0 +1,4 @@
+global proc float zenMayaVersion()
+{
+	return	(stringArrayToString(zenStringArraySector(stringToStringArray(`about -version`,"."),0,1),"."));
+}

@@ -1,0 +1,20 @@
+global proc zenLayerShaveOutput()
+{
+	string	$currentLoc=dirname(`getAttr shaveGlobals.hairFilenamePrefix`);
+		if($currentLoc=="") $currentLoc="shave";
+
+	string	$command=
+		(
+			"source zenTools;"+
+			"setAttr -type \"string\" shaveGlobals.hairFilenamePrefix "+
+			"(\""+$currentLoc+"/\"+`editRenderLayerGlobals -q -crl`);"
+		);
+		
+	string	$currentMEL=`getAttr defaultRenderGlobals.preRenderLayerMel`;
+	
+		if($currentMEL!="") $currentMEL=$currentMEL+";";
+	
+		setAttr -type "string" defaultRenderGlobals.preRenderLayerMel ($currentMEL+$command);
+		
+		print "Shave images will output images named by render layer.";
+}

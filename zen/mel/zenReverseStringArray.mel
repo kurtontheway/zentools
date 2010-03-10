@@ -1,0 +1,11 @@
+global proc string[] zenReverseStringArray(string $array[])
+{
+	string	$arrayOut[];
+
+		for($i=0;$i<size($array);$i++)
+		{
+			$arrayOut[$i]=$array[(size($array)-1-$i)];
+		}
+
+	return 	$arrayOut;
+}

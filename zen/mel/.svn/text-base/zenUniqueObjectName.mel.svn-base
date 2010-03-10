@@ -1,0 +1,10 @@
+//returns the input string as a unique object name
+global proc string zenUniqueObjectName(string $name)
+{
+		if(`objExists $name`)
+		{
+			$name=`zenNumberSuffix $name`;
+			$name=`zenUniqueName $name`;
+		}
+	return 	$name;
+}

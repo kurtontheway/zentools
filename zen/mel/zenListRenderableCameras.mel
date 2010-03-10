@@ -1,0 +1,11 @@
+//return a list of renderable cameras
+proc string[] zenListRenderableCameras()
+{
+	string	$cameras[]=`listCameras`;
+	string	$renderable[];
+	
+		for($camera in $cameras)
+			if (`getAttr ($camera+".renderable")`) $renderable[size($renderable)]=$camera;
+			
+	return	$renderable;
+}
